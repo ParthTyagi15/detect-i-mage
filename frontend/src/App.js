@@ -22,7 +22,7 @@ function App() {
     console.log(selectedFile.file);
     formData.append("file", selectedFile.file);
 
-    fetch("http://localhost:8000", {
+    fetch("https://detect-i-mage-backend.onrender.com", {
       method: "POST",
       body: formData,
     })
